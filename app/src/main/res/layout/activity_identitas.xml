@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Identitas">
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:src="@drawable/profil" />
+
+    <TextView
+        android:id="@+id/textnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profil"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/vidaloka"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Jhonathan Kenzo"
+        android:textColor="@color/black"
+        android:textSize="29sp" />
+
+    <TextView
+        android:id="@+id/textemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textnama"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="jhonathan.10120142@mahasiswa.unikom.ac.id"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textnimkelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textemail"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="10120142-IF4"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/temumakan_navigasi"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
